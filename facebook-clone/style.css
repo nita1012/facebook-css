@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+}
+
+.header_left img {
+  height: 40px;
+}
+
+.user_avtar {
+  border-radius: 50%;
+  width: 45px;
+}
+.header {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: whitesmoke;
+  z-index: 100;
+  box-shadow: 0 5px 8px -9px black;
+}
+
+.header_left {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header_input {
+  display: flex;
+  align-items: center;
+  background-color: rgb(250, 244, 235);
+  margin-left: 10px;
+  border-radius: 999px;
+}
+.header_input input {
+  background-color: transparent;
+  border: none;
+  border-width: 0;
+}
+.header_middle {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.header_options .material-icons {
+  font-size: xx-large;
+  color: gray;
+}
+.header_options:hover .material-icons {
+  color: blue;
+}
+.header_options {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.header_options.active .material-icons {
+  color: blue;
+}
+.header_options.active {
+  
+  border-bottom: 4px solid;
+  border-bottom-color: blue;
+}
+.header_options:hover{
+    background-color: rgb(241, 240, 236);
+    border-radius: 10px;
+    padding: 0 30px;
+    border-bottom: none;
+    align-items: center;
+}
+.header_info{
+    display: flex;
+    align-items: center;
+   
+}
+
+.header_info h4{
+    margin-left: 10px;
+}
+.header_right{
+    display: flex;
+    align-items: center;
+}
+.header_right .material-icons{
+  color:grey;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.sidebarRow{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.sidebarRow:hover{
+  background-color: grey;
+  border-radius: 0;
+}
+.sidebarRow h4{
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.sidebarRow .material-icons
+{
+  font-size: xx-large;
+  color: aqua;
+}
+.story{
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:120px;
+  height: 200px;
+  box-shadow: 0px 5px 5px gray;
+  margin-right: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 100ms ease-in;
+}
+
+.story:hover{
+  transform: scale(1.07);
+}
+.story h4{
+  color: orange;
+  position: absolute;
+  bottom: 20px;
+  left:20px
+}
+.storyReel{
+  padding: 10px 0;
+  display: flex;
+}
+.main_body{
+  display: flex;
+}
+body{
+  background-color: rgb(250, 242, 242);
+  
+}
+.feed{
+  flex:1;
+  display: flex;
+  padding: 10px 100px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sidebar{
+  flex: 0.13;
+  padding: 25px 10px;
+}
+.messageSender{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  background-color: honeydew;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px -7px gainsboro;
+  width: 100%;
+}
+.messageSender_top
+{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  padding: 15px;
+}
+.messageSender_top form{
+  display: flex;
+  flex: 1;
+}
+.messageSender_top form input{
+background-color: whitesmoke;
+border-radius: 999px;
+padding: 15px 20px;
+margin: 0 10px;
+flex:1;
+border:none;
+outline-width:0;
+}
+
+.messageSender_bottom{
+  display: flex;
+  justify-content: space-evenly;
+}
+.messageSendr_options
+{
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  color: azure;
+  margin: 5px;
+}
+
+.messageSendr_options h4{
+  font-size: medium;
+  margin-left: 30px;
+  color: black;
+}
+.messageSendr_options:hover
+{
+  background-color: rgb(247, 252, 252);
+  cursor: pointer;
+}
+
+.post{
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 15px;
+  background-color: cornsilk;
+  box-shadow: 0px 5px 5px -7px grey;
+}
+.post_image img
+{
+width: 100%;
+}
+.post_top{
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 15px;
+}
+.post_topInfo h3{
+  font-size: medium;
+}
+.post_topInfo p{
+  color: gray;
+  font-size: small;
+}
+.post_options{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  border-top: 1px solid lightblue;
+  font-size: medium;
+}
+.post_option
+{
+  display: flex;
+  flex: 1;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width:768px){
+  .sidebar{
+    display: none;
+  }
+}
+
+@media (min-width:320px)
+{
+  .storyReel{
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+}
